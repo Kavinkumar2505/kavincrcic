@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HOMEPAGE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      #banner{
+        object-fit:cover;
+      }
+    </style>
+  </head>
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="text-center mt-4 mb-4">Kavin Careers</h1>
+      <center>
+    <img  class="img-fluid" id="banner" src="static/kavin.jpg" alt="Image" height=500px width=500px>
+      </center>
+<h2 class="text-center">About Kavin Careers</h2>
+    <p class="lead">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer leo turpis, posuere sit amet ipsum eu, viverra molestie ligula. In id eros ac ex pulvinar placerat. Maecenas quis tortor vel justo varius feugiat. Mauris luctus, orci in pulvinar ornare, urna lorem cursus quam, quis maximus tortor ante sed risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce eget elit risus. Aenean id mauris et turpis dapibus hendrerit. Sed vulputate, diam quis fermentum scelerisque, tellus sem laoreet elit, at condimentum ante nibh maximus elit. Fusce id porta elit, id tristique urna. Vestibulum posuere, nisi sit</p>
+    <h2 class="text-center mt-4 mb-4">Open Positions</h2>
+      <div>
+        {% for job in jobs %}
+        {% include 'display.html' %}
+        {% endfor %}
+      </div>
+      
+      <center>
+    <button class="btn btn-info">Contact Us</button>
+      <br>
+      <p>CopyRight 2022, KAVIN</p>
+      </center>
+  </body>
+</html>
